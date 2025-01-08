@@ -1,0 +1,4 @@
+${No};${Scenario};${Summary};${Email};${PW}
+1;Valid;Verify Log In with correct email and password;khinhtethtetkhine965@gmail.com;KBm@SeR2qWJL4kt;
+2;Invalid;Verify Log In with incorrect email;khinhtethtetkhine96@gmail.com;KBm@SeR2qWJL4kt;
+3;Invalid;Verify Log in with incorrect password;khinhtethtetkhine965@gmail.com;12342435;
