@@ -8,7 +8,7 @@ Open My Browser
 
 Close My Browser
     Capture Page Screenshot
-    Close Browserx
+    Close Browser
 
 Log In With Email And Password
     Open My Browser
