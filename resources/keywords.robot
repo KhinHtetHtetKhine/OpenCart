@@ -5,12 +5,12 @@ Resource   ./variables.robot
 
 *** Keywords ***
 Open My Browser
-    ${options}=    Create Object    SeleniumLibrary.Selenium.webdriver.ChromeOptions
-    Call Method    ${options}    add_argument    --headless
+    # Create ChromeOptions
+    ${options}=    Create WebDriver    ChromeOptions
+    # Add user-data-dir argument
+    Call Method    ${options}    add_argument    --user-data-dir=${USER_DATA_DIR}
+    # Start the browser with the defined options
     Create WebDriver    Chrome    options=${options}
-    #Go To    ${URL}
-    #Open Browser    https://your-login-url    Chrome
-    Open Browser    ${URL}    chrome
 
 Close My Browser
     Capture Page Screenshot
