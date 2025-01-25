@@ -6,7 +6,10 @@ Resource   ./variables.robot
 
 *** Keywords ***
 Open My Browser
-    Open Browser    {URL}    chrome    headles=True
+    ${options}=    Create Dictionary    headless=True
+    Create WebDriver    Chrome    options=${options}
+    Open Browser    ${URL}    chrome
+
 
 Close My Browser
     Capture Page Screenshot
