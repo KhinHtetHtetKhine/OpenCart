@@ -3,17 +3,10 @@ Library    SeleniumLibrary
 Library    Collections
 Resource   ./variables.robot
 
-*** Variables ***
-${USER_DATA_DIR}    /tmp/chrome-profile
 
 *** Keywords ***
 Open My Browser
-    # Create Chrome options
-    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    # Add user-data-dir argument
-    Call Method    ${options}    add_argument    --user-data-dir=${USER_DATA_DIR}
-    # Create Chrome WebDriver with the options
-    Create WebDriver    Chrome    options=${options}
+    Open Browser    {URL}    chrome    headles=True
 
 Close My Browser
     Capture Page Screenshot
