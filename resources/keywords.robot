@@ -6,7 +6,7 @@ Resource   ./variables.robot
 *** Keywords ***
 Open My Browser
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    Call Method    ${options}    add_argument    '--user-data-dir=${USER_DATA_DIR}'
+    Call Method    ${options}    add_argument    "--user-data-dir=${USER_DATA_DIR}"
     Create WebDriver    Chrome    options=${options}
     #Go To    ${URL}
     #Open Browser    https://your-login-url    Chrome
