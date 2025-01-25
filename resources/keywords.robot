@@ -4,8 +4,8 @@ Resource   ./variables.robot
 
 *** Keywords ***
 Open My Browser
-    #${options}=    Create List    --user-data-dir=${USER_DATA_DIR}
-    #Create WebDriver    Chrome    options=${options}
+    ${options}=    Create List    --user-data-dir=${USER_DATA_DIR}
+    Create WebDriver    Chrome    options=${options}
     #Open Browser    https://your-login-url    Chrome
     Open Browser    ${URL}    chrome
 
