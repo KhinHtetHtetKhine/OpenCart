@@ -17,6 +17,7 @@ Close My Browser
 
 Log In With Email And Password
     [Arguments]   ${Email}    ${PW}
+    Open My Browser
     Wait Until Element Is Visible    ${My_Account}
     Click Element  ${My_Account}  
     Click Link    ${Login}
