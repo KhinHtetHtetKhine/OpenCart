@@ -3,6 +3,5 @@ robotframework-datadriver==1.11.2
 robotframework-pythonlibcore==4.4.1
 robotframework-seleniumlibrary==6.6.1
 selenium==4.27.1
-robotframework-requests==1.0.0
+robotframework-requests==1.0a11
 robotframework-jsonlibrary==0.4
-robotframework-faker==5.2.0

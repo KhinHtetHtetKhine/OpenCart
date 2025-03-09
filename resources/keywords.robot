@@ -1,10 +1,15 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    Collections
 Resource   ./variables.robot
+
 
 *** Keywords ***
 Open My Browser
-    Open Browser    ${URL}    chrome
+    #${options}=    Create Dictionary    headless=True
+    #Create WebDriver    Chrome    options=${options}
+    Open Browser    ${URL}    headlesschrome
+
 
 Close My Browser
     Capture Page Screenshot
