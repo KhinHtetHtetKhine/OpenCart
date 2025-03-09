@@ -9,10 +9,7 @@ Test Template    Perform Login Test
 
 *** Keywords ***
 Perform Login Test
-    [Arguments]    ${No}    ${Scenario}    ${Summary}    ${Email}    ${PW}
-    Log    No: ${No}
-    Log    Scenario: ${Scenario}
-    Log    Summary: ${Summary}
+    [Arguments]    ${Scenario}    ${Email}    ${PW}
     Log    Email: ${Email}
     Log    Password: ${PW}
 
