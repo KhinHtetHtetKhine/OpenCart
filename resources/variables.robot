@@ -1,6 +1,8 @@
 *** Settings ***
+Library    SeleniumLibrary
 
 *** Variables ***
+${USER_DATA_DIR}    /tmp/chrome-profile
 ${URL}            https://awesomeqa.com/ui/
 ${My_Account}    //*[@id="top-links"]/ul/li[2]/a/span[1]
 ${Login}    //*[@id="top-links"]/ul/li[2]/ul/li[2]/a
